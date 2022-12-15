@@ -5,6 +5,7 @@
 .navbar{
   width: 100%;
   background-color: aqua;
+  padding: 20px;
 
 }
 
@@ -12,10 +13,12 @@
   margin: 10px 40px;
   text-decoration: none;
   color: rgb(5, 109, 112);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .container{
-  color: aqua;
+  color: rgb(22, 184, 184);
   width: 100%;
 }
 
@@ -33,10 +36,36 @@
 
 }
 
+.invoices a{
+  color: rgb(22, 184, 184);
+  text-decoration: none;
+}
+
 .invoice{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px 20px;
   border-radius: 5px;
-  box-shadow: 2px 5px 1px rgb(206, 207, 207);
+  box-shadow: 2px 2px 1px rgb(206, 207, 207);
+}
+
+.pageNotFound{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  width: 100%;
+}
+
+.details{
+  text-align: left;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.details span{
+  display: inline-block;
+  padding: 20px 40px;
 }

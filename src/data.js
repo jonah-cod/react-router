@@ -34,3 +34,7 @@ let invoices = [
   export function getInvoices() {
     return invoices;
   }
+
+  export function getInvoiceById(id){
+    return invoices.find((invoice)=>invoice.number === id)
+  }
